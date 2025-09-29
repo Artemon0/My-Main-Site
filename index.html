@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Main Github Site</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 20px;
+				background-color: #f4f4f4;
+				cursor: default;
+			}
+			h1 {
+				color: #333;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			button {
+				display: block;
+				margin: 0 auto;
+				padding: 10px 20px;
+				font-size: 16px;
+				cursor: default;
+				background-color: #007bff;
+				color: white;
+				border: none;
+				border-radius: 5px;
+				transition: background-color 0.3s;
+				cursor: default;
+			}
+			#github-button {
+				cursor: default;
+				right: 20px;
+				bottom: 20px;
+				position: fixed;
+				z-index: 1000;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+				border-radius: 5px;
+			}
+			button:hover {
+				background-color: #0056b3;
+			}
+			a {
+				color: #007bff;
+				text-decoration: none;
+				font-weight: bold;
+				cursor: default;
+				transition: text-decoration 0.3s;
+			}
+			a:hover {
+				text-decoration: underline;
+				cursor: default;
+				transition: text-decoration 0.3s;
+			}
+			p {
+				text-align: center;
+				font-size: 18px;
+				color: #555;
+				cursor: default;
+			}
+			#github-current-project-button {
+				margin-top: 10px;
+				cursor: default;
+				left: 20px;
+				bottom: 20px;
+				position: fixed;
+				z-index: 1000;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+				border-radius: 5px;
+				background-color: #28a745;
+			}
+			#github-current-project-button:hover {
+				background-color: #218838;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Welcome to My Github Site!</h1>
+		<button
+			id="github-button"
+			onclick="window.open('https://github.com/Artemon0', '_blank')"
+		>
+			Go to My Github
+		</button>
+		<p>
+			My current Github Python project:
+			<a href="https://github.com/Artemon0/UsableFunctions" target="_blank"
+				>UsableFunctions</a
+			>
+		</p>
+		<button
+			onclick="window.open('https://github.com/Artemon0/UsableFunctions', '_blank')"
+			id="github-current-project-button"
+		>
+			Current Project
+		</button>
+	</body>
+</html>
