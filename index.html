@@ -3,10 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<button id="theme-toggle" class="theme-toggle">🌙 Theme</button>
+
 <main class="page">
     <section class="container" id="about-me-container">
         <div class="card" id="about-me">
@@ -22,17 +24,14 @@
 
     <section class="container" id="usable-functions-container">
         <div class="card" id="usable-functions">
-            <h2>Usable Functions</h2>
+            <h2>Current project: <a href="https://github.com/Artemon0/UsableFunctions">UsableFunctions</a>
+            </h2>
+
             <button class="btn" onclick="onPressedFunctions()">Functions</button>
         </div>
     </section>
 
-    <section class="container" id="funcs">
-        <div class="card" id="functions">
-            <h2>Functions</h2>
-            <button class="btn" onclick="onPressedFunctions()">Functions</button>
-        </div>
-    </section>
+
 </main>
 
 <script src="script.js"></script>
